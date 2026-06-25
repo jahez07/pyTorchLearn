@@ -14,3 +14,19 @@ a = torch.ones((2, 3), dtype=torch.int16)
 # type casting
 b = a.to(dtype=torch.float32)
 ```
+## Tensor Transformations
+Change the dimensions of the tensor:
+- `Tensor.view(nrows, ncols)`
+Flexibilities:
+- In-place alterations
+- Tensor copying
+- Changing the share of the tensor, such as altering its dimensions
+
+# PyTorch Basic Operations
+Pytorch provides a rich set of arithmetic operations for tensors, supporting both element wise and matrix level computations. These operatios are similar to NumPy, but with added support for automatic differentiation and GPU acceleration.
+## Major Categories of Operations
++ Common functions : abs, ceil, floor, clamp, trigonometric
++ Inverses of the common functions;: pi, sin, asin, bitwise
++ Comparisons
++ Reductions: max, min, std, prod, unique, vector/matrices
++ Linear algebra operations
